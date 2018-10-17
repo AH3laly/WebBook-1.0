@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>Web Book 1.0</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+
+<div class="bodyContainer">
+    <div class="pageContainer">
+        <img class="arrow-next" src="images/next.jpg">
+        <img class="arrow-prev" src="images/prev.jpg">
+        <img pageNumber="1" id="pageImg" src="pages/1.jpg" />
+    </div>
+</div>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var numberOfPages = 10;
+    var wb = new webBook();
+    wb.init(numberOfPages);
+});
+</script>
+
+</body>
+</html>

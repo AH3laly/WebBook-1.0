@@ -1,0 +1,33 @@
+/*
+* Author: Abdelrahman Mohamed
+* Contact: < Abdo.Tasks@Gmail.Com , https://Github.com/abd0m0hamed >
+* Project: WebBook 1.0
+* Description: Simple responsive HTML & JS script to publish Web Books.
+* License: Science not for Monopoly.
+*/
+
+.bodyContainer {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    display: block;
+    margin: 5px auto;
+}
+.pageContainer {
+    position: relative;
+}
+.bodyContainer #pageImg {
+    width: 100%;
+    position: relative;
+}
+.arrow-next{
+    position: absolute;
+    z-index: 99;
+    right: 0px;
+}
+.arrow-prev{
+    position: absolute;
+    z-index: 99;
+    left: 0px;
+}
+
