@@ -24,10 +24,12 @@
     position: absolute;
     z-index: 99;
     right: 0px;
+    cursor: pointer;
 }
 .arrow-prev{
     position: absolute;
     z-index: 99;
     left: 0px;
+    cursor: pointer;
 }
 

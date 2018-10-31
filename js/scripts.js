@@ -18,6 +18,11 @@ function webBook(){
             self.numberOfPages = numberOfPages;
         }
         
+        if(parseInt(self.numberOfPages) === 1){
+            $(".arrow-next, .arrow-prev").hide();
+        }
+        
+        self.setAvailableArrows();
         self.setArrowsPosition();
         
         $(".arrow-next").click(function(){
@@ -38,6 +43,28 @@ function webBook(){
     
     this.setCurrentPage = function(pageNumber){
         $("#pageImg").attr("pageNumber",pageNumber);
+        self.setAvailableArrows();
+    }
+    this.setAvailableArrows = function(){
+        
+        if(parseInt(self.numberOfPages) === 1){
+            $(".arrow-next, .arrow-prev").hide();
+            return;
+        }
+
+        if(self.getCurrentPage() === 1){
+            setTimeout(function(){
+                $(".arrow-next").show();
+                $(".arrow-prev").hide();
+            },200);
+        }
+        
+        if(self.getCurrentPage() === parseInt(self.numberOfPages)){
+            setTimeout(function(){
+                $(".arrow-prev").show();
+                $(".arrow-next").hide();
+            },200);
+        }
     }
     
     this.setArrowsPosition = function(){
