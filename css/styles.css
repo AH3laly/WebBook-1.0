@@ -1,6 +1,6 @@
 /*
-* Author: Abdelrahman Mohamed
-* Contact: < Abdo.Tasks@Gmail.Com , https://Github.com/abd0m0hamed >
+* Author: Abdelrahman Helaly
+* Contact: < AH3laly@gmail.com , https://Github.com/AH3laly >
 * Project: WebBook 1.0
 * Description: Simple responsive HTML & JS script to publish Web Books.
 * License: Science not for Monopoly.
